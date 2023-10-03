@@ -1,0 +1,21 @@
+ FAIL  ./problem.spec.js
+  ● Test suite failed to run
+
+    Cannot find module 'cheerio' from 'problem-a/problem.spec.js'
+
+      1 | const fs = require('fs');
+    > 2 | const cheerio = require('cheerio') //for html testing
+        |                 ^
+      3 | const inlineCss = require('inline-css'); //for css testing
+      4 |
+      5 | //include custom matchers
+
+      at Resolver._throwModNotFoundError (../../../../usr/local/lib/node_modules/jest/node_modules/jest-resolve/build/resolver.js:427:11)
+      at Object.require (problem-a/problem.spec.js:2:17)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.327 s
+Ran all test suites matching /problem-a/i.
+anughosh@Anumitas-MacBook-Pro problem-a % 
